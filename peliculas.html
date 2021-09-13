@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="icon" href="/RECURSOS/icon_Mesa de trabajo 1.png">
+    <title>Películas</title>
+  </head>
+  <body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="./RECURSOS/peliteca_Mesa de trabajo 1.png" alt="" width="120" height="48" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agregarpeliculas">Agregar películas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+<div class="b-example-divider"></div>
+
+<!-- tarjeta principal -->
+
+<div class="card bg-dark text-white">
+    <img src="/RECURSOS/CARTA.jpg" class="card-img" alt="..." style="margin-bottom: 30px;">
+    <div class="card-img-overlay">
+      <!-- <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Last updated 3 mins ago</p> -->
+    </div>
+  </div>
+
+<!-- tarjeta principal -->
+
+
+<!-- Tarjetas -->
+
+<div class="row row-cols-1 row-cols-md-3 g-4 tarjetasdepeliculas" id="tarjetasdepeliculas" style=" margin: auto;">
+    <div class="col">
+      <div class="card h-100 bg-dark" style="border: none; border-radius: 20px; color: white;">
+        <img src="/RECURSOS/posterbw.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Black Widow</h5>
+          <p class="card-text">Al nacer, la Viuda Negra, también conocida como Natasha Romanova, se entrega a la KGB para convertirse en su agente definitivo. Cuando la URSS se separa, el gobierno intenta matarla mientras la acción se traslada a la actual Nueva York.</p>
+          <button type="button" id="0" class="btn btn-light saberinformacion">Más Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 bg-dark" style="border: none; border-radius: 20px; color: white;">
+        <img src="/RECURSOS/postershang.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Shang-Chi y la Leyenda de los Diez Anillos</h5>
+          <p class="card-text">Protagonizada por Simu Liu como Shang-Chi, quien debe enfrentarse al pasado que creía haber dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos.</p>
+          <button type="button" id="1" class="btn btn-light saberinformacion">Más Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 bg-dark" style="border: none; border-radius: 20px; color: white;">
+        <img src="RECURSOS/posterpatrulla.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Patrulla Canina; La Película</h5>
+          <p class="card-text">¡Ellos son Paw Patrol! Cuando Humdinger, el rival más grande de todos, se convierte en alcalde de Adventure City comienza a causar estragos, Ryder, y nuestros cachorros favoritos se ponen en marcha para enfrentar el desafío.</p>
+          <button type="button" id="2" class="btn btn-light saberinformacion">Más Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 bg-dark" style="border: none; border-radius: 20px; color: white;">
+        <img src="/RECURSOS/posterfg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Free Guy</h5>
+          <p class="card-text">Un cajero de un banco descubre que en realidad es un personaje sin papel dentro de un brutal videojuego de mundo interactivo.</p>
+          <button type="button" id="3" class="btn btn-light saberinformacion">Más Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 bg-dark" style="border: none; border-radius: 20px; color: white;">
+          <img src="/RECURSOS/postercruella.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Cruella</h5>
+            <p class="card-text" id="descripcion" >Decidida a convertirse en una exitosa diseñadora de moda, una joven y creativa estafadora se asocia con un par de ladrones para sobrevivir en las calles de Londres. Sin embargo, una serie de acontecimientos la llevan a asumir su lado malvado.</p>
+            <button type="button" id="4" class="btn btn-light saberinformacion">Más Info</button>
+        </div>
+        </div>
+      </div>
+</div>
+
+
+<!-- Tarjetas -->
+
+<!-- tarjeta principal -->
+
+<div class="card bg-dark text-white" id="agregarpeliculas" style="margin-top: 100px;">
+    <img src="/RECURSOS/banneragregar.gif" class="card-img" alt="..." style="margin-bottom: 30px;">
+    <div class="card-img-overlay">
+      <!-- <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Last updated 3 mins ago</p> -->
+    </div>
+  </div>
+
+<!-- tarjeta principal -->
+
+<!-- formulario -->
+
+<div class="container" style="width: 900px; margin-top: 50px;">
+
+<h3 style="text-align: center;">Agrega tu película favorita</h3> <br>
+
+<div class="input-group mb-3">
+    <h3 style="width: 100%;">Nombre:</h3>
+    <input id="nombre" type="text" class="form-control" placeholder="Ejemplo: El Cisne Negro" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Año de Lanzamiento:</h3>
+    <input id="anyolanzamiento" type="tel" class="form-control" placeholder="Ejemplo: 2011" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Actores:</h3>
+    <input id="actores" type="text" class="form-control" placeholder="Ejemplo: Edgar Ramirez, Ursula Corbelló" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Nacionalidad de la película:</h3>
+    <input id="nacionalidad" type="text" class="form-control" placeholder="Ejemplo: Española" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Director:</h3>
+    <input id="director" type="text" class="form-control" placeholder="Ejemplo: Javier Calvo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Escritor:</h3>
+    <input id="escritor" type="text" class="form-control" placeholder="Ejemplo: Nassim Taleb" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Lenguaje Original:</h3>
+    <input id="lenguaje" type="text" class="form-control" placeholder="Ejemplo: Francés" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Plataforma de Lanzamiento:</h3>
+    <input id="plataforma" type="text" class="form-control" placeholder="Ejemplo: Amazon Prime" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;" id="pertenece" >¿Pertenece al Universo Marvel?</h3>
+  <select class="form-select" id="inputGroupSelect01">
+      <option selected>Escoge una opción</option>
+      <option value="true">Si</option>
+      <option value="false">No</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Nombre del Personaje Principal:</h3>
+    <input id="nombrePersonaje" type="text" class="form-control" placeholder="Ejemplo: Iron Man" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Productores:</h3>
+    <input id="productores" type="text" class="form-control" placeholder="Ejemplo: Steven Spielberg" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Distribuidor:</h3>
+    <input id="distribuidor" type="text" class="form-control" placeholder="Ejemplo: Warner Bros." aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Género:</h3>
+    <input id="genero" type="text" class="form-control" placeholder="Ejemplo: Terror" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Inserta una pequeña sinopsis:</h3>
+    <textarea class="form-control" id="sinopsis" rows="3" style="resize: none;"></textarea>
+  </div>
+
+  <div class="input-group mb-3">
+    <h3 style="width: 100%;">Ingresa el URL de algún Poster:</h3>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Pega aquí el enlace de la carátula">
+  </div>
+
+  <div style="text-align: center;">
+  <button type="button" class="btn btn-dark" id="addMovieButton" onclick="addMovieToList()" >Agregar</button>
+</div>
+
+<!-- formulario -->
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="https://github.com/gonzaulio" class="nav-link px-2 text-muted">Autor</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Twitter</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contáctanos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre Nosotros</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2021 PELITECA, Inc</p>
+  </footer>
+</div>
+
+<div class="b-example-divider"></div>
+    <!-- FOOTER -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="common.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
